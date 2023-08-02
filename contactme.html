@@ -1,41 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Contact me</title>
-    </head>
-
-    <body>
-        <h1>My Contact Details</h1>
-        <p> <em><strong> ramtinba145822@gmail.com</strong></em></p>
-        <p> <em> <strong>+98 917 600 3598 </strong></em> </p>
-        <hr>
-        <form  action="mailto:ramtinba145822@gmail.com" method="post" enctype="text/plain">
-            <table cellspacing = "10">
-                <thead>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td> <label>Your name:</label> </td>
-                        <td> <input type="text" name="yourName"> </td>      
-                    </tr>
-                    <tr>
-                        <td> <label>Your Email:</label> </td>
-                        <td> <input type="email" name="yourEmail"> </td>      
-                    </tr>
-                    <tr>
-                        <td> <label>Your Message:</label> </td>
-                        <td> <textarea name="" rows="10" cols="60" name="yourMessage"> </textarea> </td>      
-                    </tr>
-                    <tr>
-                        <td> <input type="submit"> </td>      
-                    </tr>
-                </tbody>
-            </table>
-            
-
-        </form>
-    </body>
-
+<head>
+  <meta charset="UTF-8">
+  <title>Contact me</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha512-9VJlGJZm4Pm5T1xKk2bZq3v9o3A3mUwIyPQ/BTz1LpN+2sMNJ3Z2C5P+oZfMP5f0y3W2m4v5e6jwK1bD9Qn3sA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f2f3f5;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #444;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      text-align: center;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.3rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+    input[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+    table {
+      margin: 0 auto;
+    }
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      input[type="submit"] {
+        font-size: 1rem;
+        padding: 0.4rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Contact Details</h1>
+  <p><em><strong>ramtinba145822@gmail.com</strong></em></p>
+  <p><em><strong>+98 917 600 3598</strong></em></p>
+  <hr>
+  <form action="mailto:ramtinba145822@gmail.com" method="post" enctype="text/plain">
+    <table>
+      <tbody>
+        <tr>
+          <td><label>Your name:</label></td>
+          <td><input type="text" name="yourName"></td>
+        </tr>
+        <tr>
+          <td><label>Your Email:</label></td>
+          <td><input type="email" name="yourEmail"></td>
+        </tr>
+        <tr>
+          <td><label>Your Message:</label></td>
+          <td><textarea rows="10" cols="60" name="yourMessage"></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Send"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js" integrity="sha512-jUnR1V4C8iSDd6O2c2Z2VRhJj9dH8XVubuOw7pLDP3p7gK3m4R2rX8LlZd5WQa7j5r6B5zKZf+cl3MlF9kKcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
 </html>
